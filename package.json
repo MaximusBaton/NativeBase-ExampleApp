@@ -1,0 +1,37 @@
+{
+  "name": "tricho_app",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "android": "react-native run-android",
+    "test": "jest",
+    "postinstall": "react-native link",
+    "changeAppName": "react-native eject && react-native link && printf \"\\e[31;48;5;11mDONE. Don't forget to sign iOS project in Xcode again, and change 'Bundle Identifier' in General settings!\\e[0m\n\n\n\""
+  },
+  "dependencies": {
+    "color": "^3.1.2",
+    "lodash": "^4.17.11",
+    "native-base": "^2.12.1",
+    "prop-types": "^15.7.2",
+    "react": "16.8.3",
+    "react-native": "^0.59.9",
+    "react-native-code-push": "^5.6.0",
+    "react-native-easy-grid": "^0.2.1",
+    "react-native-modalbox": "^1.7.1",
+    "react-native-router-flux": "^4.0.6",
+    "react-redux": "^7.0.3",
+    "redux": "^4.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.4.5",
+    "@babel/runtime": "7.4.5",
+    "babel-jest": "24.8.0",
+    "jest": "24.8.0",
+    "metro-react-native-babel-preset": "0.54.1",
+    "react-test-renderer": "16.8.3"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
