@@ -26,6 +26,7 @@ export default (variables /*: * */ = variable) => {
       flexDirection: null,
       backgroundColor: "transparent",
       borderColor: null,
+      borderRadius: 0,
       elevation: 0,
       shadowColor: null,
       shadowOffset: null,

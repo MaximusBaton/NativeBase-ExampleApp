@@ -193,9 +193,9 @@ class AppNavigator extends Component {
             backgroundColor={theme.statusBarColor}
           />*/}
           <RouterWithRedux>
-            <Scene key="root">
+            <Scene key="root" hideNavBar>
 
-              <Scene key="home" openLeftMenu={this.openLeftMenu.bind(this)} component={Home} hideNavBar initial={true} />
+              <Scene key="home" openLeftMenu={this.openLeftMenu.bind(this)} component={Home} initial={true} />
 
               <Scene key="anatomy" component={Anatomy} />
 
