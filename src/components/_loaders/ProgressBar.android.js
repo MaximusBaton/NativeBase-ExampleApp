@@ -1,7 +1,6 @@
-
 import React, { Component } from 'react';
 import ProgressBar from 'ProgressBarAndroid';
-
+import computeProps from "../../utils/computeProps";
 
 export default class SpinnerNB extends Component {
 

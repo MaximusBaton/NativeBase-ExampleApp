@@ -18,18 +18,11 @@ const instructions = Platform.select({
 });*/
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    width: null,
-    height: null,
-  },
   modal: {
     justifyContent: 'center',
     alignItems: 'center',
-  },
-  modal1: {
-    height: 300,
-  },
+    height: 300
+  }
 });
 
 
@@ -74,11 +67,12 @@ export default class App extends Component<Props> {
     if (this.state.showDownloadingModal) {
       return (
         <Container style={{ backgroundColor: theme.defaultBackgroundColor }}>
-          <Content style={styles.container}>
+          <View style={{ flex: 1 }}>
             <Modal
-              style={[styles.modal, styles.modal1]}
-              backdrop={false}
               ref={(c) => { this._modal = c; }}
+              style={styles.modal}
+              backdrop={true}
+              backdropPressToClose={false}
               swipeToClose={false}
             >
               <View style={{ flex: 1, alignSelf: 'stretch', justifyContent: 'center', padding: 20 }}>
@@ -95,7 +89,7 @@ export default class App extends Component<Props> {
                 }
               </View>
             </Modal>
-          </Content>
+          </View>
         </Container>
       );
     }
